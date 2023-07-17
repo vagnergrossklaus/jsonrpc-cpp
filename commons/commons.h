@@ -1,8 +1,6 @@
 #pragma once
 
-#include "commons_global.h"
-
-class COMMONS_EXPORT Commons {
+class Commons {
 public:
   Commons();
 };

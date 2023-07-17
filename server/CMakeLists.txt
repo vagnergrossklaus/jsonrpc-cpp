@@ -5,14 +5,14 @@ project(server LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(server
+add_executable(${PROJECT_NAME}
     main.cpp
     stubserver.h stubserver.cpp
 )
 
 target_link_libraries(${PROJECT_NAME} PUBLIC jsoncpp jsonrpccpp-common jsonrpccpp-server commons)
 
-install(TARGETS server
+install(TARGETS ${PROJECT_NAME}
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
