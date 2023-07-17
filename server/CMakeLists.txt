@@ -1,0 +1,18 @@
+cmake_minimum_required(VERSION 3.5)
+
+project(server LANGUAGES CXX)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+add_executable(server
+    main.cpp
+    stubserver.h stubserver.cpp
+)
+
+target_link_libraries(${PROJECT_NAME} PUBLIC jsoncpp jsonrpccpp-common jsonrpccpp-server commons)
+
+install(TARGETS server
+    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+)
