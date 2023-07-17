@@ -7,4 +7,4 @@ Server: Implementa servidor basico para ouvir requisicoes
 Client: Implementa requisicoes basicas para o server 
 
 ## Dependencias
-[libjson-rpc-cpp](https://github.com/cinemast/libjson-rpc-cpp)https://github.com/cinemast/libjson-rpc-cpp
+[libjson-rpc-cpp](https://github.com/cinemast/libjson-rpc-cpp)
